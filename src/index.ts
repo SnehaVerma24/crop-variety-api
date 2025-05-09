@@ -55,6 +55,7 @@ app.get('/api/varieties/:id', (req, res) => {
   res.json(variety);
 });
 
+
 // Create variety
 app.post('api/varieties', (req, res) => {
   const newVariety = {
