@@ -48,7 +48,7 @@ app.get('/api/varieties/:id', (req, res) => {
 });
 
 // Create variety
-app.post('/api/varieties', (req, res) => {
+app.post('api/varieties', (req, res) => {
   const newVariety = {
     id: uuidv4(),
     ...req.body
@@ -58,7 +58,7 @@ app.post('/api/varieties', (req, res) => {
 });
 
 // Update variety
-app.put('/api/varieties/:id', (req, res) => {
+app.put('api/varieties/:id', (req, res) => {
   const index = varieties.findIndex(v => v.id === req.params.id);
   if (index === -1) {
     return res.status(404).json({ message: 'Variety not found' });
@@ -68,7 +68,7 @@ app.put('/api/varieties/:id', (req, res) => {
 });
 
 // Delete variety
-app.delete('/api/varieties/:id', (req, res) => {
+app.delete('api/varieties/:id', (req, res) => {
   const index = varieties.findIndex(v => v.id === req.params.id);
   if (index === -1) {
     return res.status(404).json({ message: 'Variety not found' });
