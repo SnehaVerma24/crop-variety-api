@@ -25,6 +25,14 @@ let varieties = [
     expectedYield: 90,
     estimatedHarvestDate: '2024-05-01',
     healthRating: 5
+  },
+   {
+    id: '2',
+    cropName: 'Cherry',
+    varietyName: 'fruit',
+    expectedYield: 40,
+    estimatedHarvestDate: '2024-01-01',
+    healthRating: 3
   }
 ];
 
