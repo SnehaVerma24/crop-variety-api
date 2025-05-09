@@ -9,7 +9,7 @@
     "vercel-build": "tsc"
   },
   "engines": {
-    "node": "18.x"
+    "node": ">=18.0.0"
   },
   "keywords": [],
   "author": "",
@@ -26,5 +26,9 @@
     "@types/uuid": "^9.0.7",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
+  },
+  "resolutions": {
+    "glob": "^9.0.0",
+    "rimraf": "^5.0.0"
   }
 }
